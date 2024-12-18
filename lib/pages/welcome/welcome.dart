@@ -1,5 +1,4 @@
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -67,9 +66,9 @@ class _WelcomeState extends State<Welcome> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     decorator: DotsDecorator(
                         color: Colors.grey,
-                        size: Size.square(8.0),
+                        size: const Size.square(8.0),
                         activeColor: Colors.blue,
-                        activeSize: Size(18.0, 8.0),
+                        activeSize: const Size(18.0, 8.0),
                         activeShape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
                         )),
