@@ -5,6 +5,7 @@ import 'app_events.dart';
 
 class AppBlocs extends Bloc<AppEvents, AppStates> {
   AppBlocs() : super(InitStates()) {
+    print("App Bloc called");
     on<Increment>((event, emit) {
       emit(AppStates(counter: state.counter + 1));
       print("${state.counter}");
