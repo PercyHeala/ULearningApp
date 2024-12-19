@@ -5,6 +5,7 @@ import 'welcome_events.dart';
 
 class WelcomeBlocs extends Bloc<WelcomeEvents, WelcomeState> {
   WelcomeBlocs() : super(WelcomeState()) {
+    print("Welcome Bloc called");
     on<WelcomeEvents>((events, emit) {
       emit(WelcomeState(page: state.page));
     });
