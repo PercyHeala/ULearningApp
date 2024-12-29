@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ulearning_app/app_blocs.dart';
 import 'package:ulearning_app/app_events.dart';
 import 'package:ulearning_app/app_state.dart';
+import 'package:ulearning_app/pages/sign_in/sign_in.dart';
 import 'package:ulearning_app/pages/welcome/bloc/welcome_blocs.dart';
 import 'package:ulearning_app/pages/welcome/welcome.dart';
 
@@ -32,7 +33,10 @@ class MyApp extends StatelessWidget {
             title: 'U Learners',
             debugShowCheckedModeBanner: false,
             home: const Welcome(),
-            routes: {"myHomePage": (context) => const MyHomePage()},
+            routes: {
+              "myHomePage": (context) => const MyHomePage(),
+              "signIn": (context) => const SignIn(),
+            },
           ),
         ));
   }
